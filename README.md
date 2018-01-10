@@ -1,5 +1,9 @@
-## node 版本 > 8.x
+## node@8.9.4
+
+## npm@5.6.0
 
 ### 开发
 
-* (npm | yarn) run dev
+* npm run dev:compiler
+
+* npm run dev:watch
