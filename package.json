@@ -6,15 +6,18 @@
   "scripts": {
     "dev:compiler": "tsc -w",
     "dev:watch": "nodemon ./dist/src/server.js",
-    "build": "npm run tslint && tsc",
+    "build": "npm run tslint && tsc && npm run copy",
+    "copy": "ts-node ./utils/copyStaticAssets.ts",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "test:es": "node ./dist/test/checkEsFeature.js"
   },
   "devDependencies": {
     "@types/express": "^4.11.0",
     "@types/node": "^4.0.35",
-    "es-feature-tests": "^0.3.0",
+    "@types/shelljs": "^0.7.7",
     "nodemon": "^1.14.7",
+    "shelljs": "^0.7.8",
+    "ts-node": "^4.1.0",
     "tslint": "^5.8.0",
     "typescript": "^2.6.2"
   },
