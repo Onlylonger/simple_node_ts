@@ -6,6 +6,8 @@
   "scripts": {
     "dev:compiler": "tsc -w",
     "dev:watch": "nodemon ./dist/src/server.js",
+    "build": "npm run tslint && tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
     "test:es": "node ./dist/test/checkEsFeature.js"
   },
   "devDependencies": {

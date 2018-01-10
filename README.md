@@ -7,3 +7,9 @@
 * npm run dev:compiler
 
 * npm run dev:watch
+
+### 构建
+
+* npm run build
+
+* 构建前会先检查代码格式
